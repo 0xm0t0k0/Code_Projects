@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 #define FIRST 0
 
@@ -22,7 +23,7 @@ int main() {
                 largest = a[i];
         }
         //Find second largest
-        int second_largest = a[FIRST];
+        int second_largest = INT_MIN;
         for(int i = 0; i < n; i++) {
             if (a[i] > second_largest && a[i] < largest)
                 second_largest = a[i];
